@@ -193,6 +193,6 @@ Commands
 "
 }
 
-[ "$(command -V "$ACTION" | grep ' function$')" = "" ] \
+[ "$(command -V "$ACTION" | grep ' f[ou]nction$')" = "" ] \
     && help "action not found" \
     || "$ACTION" "$2"
