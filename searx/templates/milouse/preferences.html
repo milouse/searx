@@ -1,6 +1,7 @@
 {% from 'milouse/macros.html' import tabs_open, tabs_close, tab_header, tab_footer, checkbox_onoff, checkbox %}
 
 {% extends "milouse/base.html" %}
+{% block title %}{{ _('preferences') }} - {% endblock %}
 
 {%- macro plugin_preferences(section) -%}
 {%- for plugin in plugins -%}

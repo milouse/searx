@@ -1,6 +1,6 @@
 {% extends "milouse/base.html" %}
 {% from 'milouse/macros.html' import icon, icon_small %}
-{% block title %}{% if method == 'GET' %}{{- q|e -}} -{% endif %}{% endblock %}
+{% block title %}{{ q|e }} - {% endblock %}
 {% block meta %}<link rel="alternate" type="application/rss+xml" title="Searx search: {{ q|e }}" href="{{ url_for('index') }}?q={{ q|urlencode }}&amp;categories={{ selected_categories|join(",") | replace(' ','+') }}&amp;pageno={{ pageno }}&amp;time_range={{ time_range }}&amp;language={{ current_language }}&amp;safesearch={{ safesearch }}&amp;format=rss">{% endblock %}
 {% block content %}
 <nav id="linkto_preferences"><a href="{{ url_for('preferences') }}">{{ icon('navicon-round') }}</a></nav>
