@@ -1,4 +1,4 @@
-/*! searx | 14-08-2018 | https://github.com/asciimoo/searx */
+/*! searx | 14-01-2019 | https://github.com/asciimoo/searx */
 /*
 * searx, A privacy-respecting, hackable metasearch engine
 *
@@ -1252,14 +1252,18 @@ select:focus {
   text-align: center;
 }
 .index .title {
-  background: url('../img/searx.png') no-repeat;
   width: 100%;
-  min-height: 80px;
-  background-position: center;
 }
 .index h1 {
-  font-size: 5em;
-  visibility: hidden;
+  font-size: 4em;
+}
+.index h1::before {
+  display: block;
+  content: ' ';
+  background: url(../img/hats-yellow.png) left / contain no-repeat;
+  width: 2em;
+  height: 2em;
+  margin: 0 auto .3em;
 }
 .index #search {
   margin: 0 auto;
@@ -1634,7 +1638,7 @@ footer p {
 }
 #main_preferences h1,
 #main_stats h1 {
-  background: url('../img/searx.png') no-repeat;
+  background: url('../img/hats-yellow.png') no-repeat;
   background-size: auto 75%;
   min-height: 40px;
   margin: 0 auto;

@@ -3,15 +3,19 @@
   text-align: center;
 
   .title {
-    background: url('../img/searx.png') no-repeat;
     width: 100%;
-    min-height: 80px;
-    background-position: center;
   }
 
   h1 {
-    font-size: 5em;
-    visibility: hidden;
+      font-size: 4em;
+  }
+  h1::before {
+      display: block;
+      content: ' ';
+      background: url(../img/hats-yellow.png) left/contain no-repeat;
+      width: 2em;
+      height: 2em;
+      margin: 0 auto .3em;
   }
 
   #search {
