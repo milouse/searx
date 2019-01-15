@@ -1,9 +1,9 @@
-/*! searx | 14-01-2019 | https://github.com/asciimoo/searx */
+/*! searx | 30-01-2019 | https://github.com/asciimoo/searx */
 /*
-* searx, A privacy-respecting, hackable metasearch engine
-*
-* To convert "style.less" to "style.css" run: $make styles
-*/
+ * searx, A privacy-respecting, hackable metasearch engine
+ *
+ * To convert "style.less" to "style.css" run: $make styles
+ */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -309,8 +309,8 @@ template {
  * To change the colors of the site, simple edit this variables
  */
 /*
-* searx, A privacy-respecting, hackable metasearch engine
-*/
+ * searx, A privacy-respecting, hackable metasearch engine
+ */
 .highlight .hll {
   background-color: #ffffcc;
 }
@@ -696,7 +696,6 @@ div.selectable_url pre {
   position: absolute;
   top: 0.5em;
   left: 0.5em;
-  font-family: "ion";
   font-size: 1.5em;
 }
 .dialog-error .close {
@@ -728,7 +727,13 @@ div.selectable_url pre {
   margin-bottom: 0.3em;
 }
 .dialog-error:before {
-  content: "\f110";
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-position: center center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-image: url('../img/icons/ion-alert.svg');
 }
 .dialog-warning {
   position: relative;
@@ -746,7 +751,6 @@ div.selectable_url pre {
   position: absolute;
   top: 0.5em;
   left: 0.5em;
-  font-family: "ion";
   font-size: 1.5em;
 }
 .dialog-warning .close {
@@ -778,7 +782,13 @@ div.selectable_url pre {
   margin-bottom: 0.3em;
 }
 .dialog-warning:before {
-  content: "\f10f";
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-position: center center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-image: url('../img/icons/ion-warning.svg');
 }
 .dialog-modal {
   position: relative;
@@ -802,7 +812,6 @@ div.selectable_url pre {
   position: absolute;
   top: 0.5em;
   left: 0.5em;
-  font-family: "ion";
   font-size: 1.5em;
 }
 .dialog-modal .close {
@@ -1145,108 +1154,100 @@ select:focus {
     text-align: left;
   }
 }
-@font-face {
-  font-family: "ion";
-  src: url("../fonts/ion.eot?ce7a0ead692560b4405a96d5b8471f51");
-  src: url("../fonts/ion.eot?#iefix") format("embedded-opentype"), url("../fonts/ion.woff2?ce7a0ead692560b4405a96d5b8471f51") format("woff2"), url("../fonts/ion.woff?ce7a0ead692560b4405a96d5b8471f51") format("woff"), url("../fonts/ion.ttf?ce7a0ead692560b4405a96d5b8471f51") format("truetype"), url("../fonts/ion.svg?ce7a0ead692560b4405a96d5b8471f51#ion") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 .ion-icon {
+  height: 16px;
+  width: 16px;
   display: inline-block;
   vertical-align: middle;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
   text-decoration: inherit;
   text-transform: none;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  speak: none;
 }
 .ion-icon:before {
-  font-family: "ion";
-}
-.ion-navicon-round:before {
-  content: "\f101";
-}
-.ion-search:before {
-  content: "\f102";
-}
-.ion-play:before {
-  content: "\f103";
-}
-.ion-link:before {
-  content: "\f104";
-}
-.ion-chevron-up:before {
-  content: "\f105";
-}
-.ion-chevron-left:before {
-  content: "\f106";
-}
-.ion-chevron-right:before {
-  content: "\f107";
-}
-.ion-arrow-down-a:before {
-  content: "\f108";
-}
-.ion-arrow-up-a:before {
-  content: "\f109";
-}
-.ion-arrow-swap:before {
-  content: "\f10a";
-}
-.ion-arrow-dropdown:before {
-  content: "\f10b";
-}
-.ion-globe:before {
-  content: "\f10c";
-}
-.ion-time:before {
-  content: "\f10d";
-}
-.ion-location:before {
-  content: "\f10e";
-}
-.ion-warning:before {
-  content: "\f10f";
-}
-.ion-error:before {
-  content: "\f110";
-}
-.ion-film-outline:before {
-  content: "\f111";
-}
-.ion-music-note:before {
-  content: "\f112";
-}
-.ion-more-vertical:before {
-  content: "\f113";
-}
-.ion-magnet:before {
-  content: "\f114";
-}
-.ion-close:before {
-  content: "\f115";
+  height: 16px;
+  width: 16px;
+  background-size: 16px 16px;
+  content: '';
+  line-height: 1;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .ion-icon-big {
+  height: 16px;
+  width: 16px;
   display: inline-block;
   vertical-align: middle;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
   text-decoration: inherit;
   text-transform: none;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 149%;
+  speak: none;
+  height: 24px;
+  width: 24px;
 }
 .ion-icon-big:before {
-  font-family: "ion";
+  height: 16px;
+  width: 16px;
+  background-size: 16px 16px;
+  content: '';
+  line-height: 1;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ion-icon-big:before {
+  height: 24px;
+  width: 24px;
+  background-size: 24px 24px;
+}
+.ion-menu:before {
+  background-image: url('../img/icons/ion-menu.svg');
+}
+.ion-search:before {
+  background-image: url('../img/icons/ion-search.svg');
+}
+.ion-film:before {
+  background-image: url('../img/icons/ion-film.svg');
+}
+.ion-music-note:before {
+  background-image: url('../img/icons/ion-musical-note.svg');
+}
+.ion-pin:before {
+  background-image: url('../img/icons/ion-pin.svg');
+}
+.ion-globe:before {
+  background-image: url('../img/icons/ion-globe.svg');
+}
+.ion-magnet:before {
+  background-image: url('../img/icons/ion-magnet.svg');
+}
+.ion-download-alt:before {
+  background-image: url('../img/icons/ion-download.svg');
+}
+.ion-arrow-swap:before {
+  background-image: url('../img/icons/ion-swap.svg');
+}
+.ion-floppy-disk:before {
+  background-image: url('../img/icons/ion-save.svg');
+}
+.ion-file:before {
+  background-image: url('../img/icons/ion-document.svg');
+}
+.ion-link:before {
+  background-image: url('../img/icons/ion-link.svg');
+}
+.ion-close:before {
+  background-image: url('../img/icons/ion-close.svg');
+}
+.ion-chevron-up:before {
+  background-image: url('../img/icons/ion-arrow-dropup.svg');
+}
+.ion-chevron-left:before {
+  background-image: url('../img/icons/ion-arrow-dropleft.svg');
+}
+.ion-chevron-right:before {
+  background-image: url('../img/icons/ion-arrow-dropright.svg');
 }
 .index {
   text-align: center;
@@ -1263,7 +1264,7 @@ select:focus {
   background: url(../img/hats-yellow.png) left / contain no-repeat;
   width: 2em;
   height: 2em;
-  margin: 0 auto .3em;
+  margin: 0 auto 0.3em;
 }
 .index #search {
   margin: 0 auto;
@@ -1612,11 +1613,7 @@ main {
 }
 main {
   width: 100%;
-}
-footer {
-  bottom: 0;
-  width: 100%;
-  height: 50px;
+  padding-bottom: 120px;
 }
 #main_preferences,
 #main_about,
@@ -1625,13 +1622,15 @@ footer {
   width: auto;
 }
 footer {
+  position: fixed;
   bottom: 0;
-  height: 3em;
-  margin: 1em 0;
-  padding: 1em 0;
-  clear: both;
   width: 100%;
+  height: 3em;
+  margin: 1em 0 0;
+  padding: 1em 0;
   text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 10%, white 60%);
+  z-index: 1000;
 }
 footer p {
   font-size: 0.9em;
@@ -1949,7 +1948,7 @@ article.result-images[data-vim-selected]::before {
   box-shadow: 0px 0px 5px #CCC;
 }
 #sidebar .infobox h2 {
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
 }
 #sidebar .infobox img {
   max-width: 100%;
