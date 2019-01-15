@@ -123,7 +123,6 @@ div.selectable_url {
     position: absolute;
     top: 0.5em;
     left: 0.5em;
-    font-family:"ion";
     font-size: 1.5em;
   }
 
@@ -164,19 +163,35 @@ div.selectable_url {
 }
 
 .dialog-error {
-  .dialog();
-  color: @color-error;
-  background: @color-error-background;
-  border-color: @color-error;
-  .ion-error();
+    .dialog();
+    color: @color-error;
+    background: @color-error-background;
+    border-color: @color-error;
+    &:before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-position: center center;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-image: url('../img/icons/ion-alert.svg');
+    }
 }
 
 .dialog-warning {
-  .dialog();
-  color: @color-warning;
-  background: @color-warning-background;
-  border-color: @color-warning;
-  .ion-warning();
+    .dialog();
+    color: @color-warning;
+    background: @color-warning-background;
+    border-color: @color-warning;
+    &:before {
+        content: '';
+        height: 24px;
+        width: 24px;
+        background-position: center center;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-image: url('../img/icons/ion-warning.svg');
+    }
 }
 
 .dialog-modal {
